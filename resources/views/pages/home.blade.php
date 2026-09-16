@@ -26,8 +26,8 @@
         .icon-pop {
             opacity: 0;
             transform: scale(0) rotate(-180deg);
-            animation: iconPop 700ms cubic-bezier(0.2, 1, 0.2, 1) both;
-            animation-delay: 2500ms;
+            animation: iconPop 500ms cubic-bezier(0.2, 1, 0.2, 1) both;
+            animation-delay: 1000ms;
         }
 
         @keyframes iconPop {
@@ -54,10 +54,10 @@
             <div class="mt-8 flex items-center justify-center h-[20rem]">
                 <div class="relative w-full h-32">
                     <span class="bg-gray-900 sq" style="--d:0ms; --x:-400px; --fx:calc(50% + 60px);"></span>
-                    <span class="bg-amber-300 sq" style="--d:500ms; --x:-400px; --fx:calc(50% + 55px);"></span>
-                    <span class="bg-gray-900 sq" style="--d:1000ms; --x:-400px; --fx:calc(50% + 50px);"></span>
-                    <span class="bg-amber-300 sq" style="--d:1500ms; --x:-400px; --fx:calc(50% + 45px);"></span>
-                    <span class="bg-gray-900 sq" style="--d:2000ms;   --x:-400px; --fx:calc(50% + 40px);"></span>
+                    <span class="bg-amber-300 sq" style="--d:300ms; --x:-400px; --fx:calc(50% + 55px);"></span>
+                    <span class="bg-gray-900 sq" style="--d:450ms; --x:-400px; --fx:calc(50% + 50px);"></span>
+                    <span class="bg-amber-300 sq" style="--d:525ms; --x:-400px; --fx:calc(50% + 45px);"></span>
+                    <span class="bg-gray-900 sq" style="--d:600ms;   --x:-400px; --fx:calc(50% + 40px);"></span>
 
                     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <i class="fa-solid fa-hashtag icon-pop text-8xl text-amber-300"></i>
@@ -70,10 +70,14 @@
             <p class="mt-9 text-2xl text-gray-400">
                 Register and start independent processes for breaking hashes lists.
             </p>
+
             <x-button class="text-4xl max-w-md py-10" href="{{ route('register') }}">
                 Register ->
             </x-button>
 
+            <x-button class="text-4xl max-w-md py-10" href="{{ route('login') }}" variant="secondary">
+                Log in ->
+            </x-button>
         </div>
     </div>
 

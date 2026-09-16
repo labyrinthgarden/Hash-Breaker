@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('Hash Hahs', 'Hash Hahs'),
+    'name' => env('Hash Breaker', 'Hash Breaker'),
 
     /*
     |--------------------------------------------------------------------------
