@@ -9,14 +9,14 @@
 
             <div class="flex items-center gap-3">
                 @auth
-                    <span class="hidden sm:block text-sm text-gray-600">
+                    <span class="hidden sm:block text-sm text-white">
                         {{ auth()->user()->name }}
                     </span>
 
                     <form method="POST" action="{{ route('logout') }}">
-                        @crsf
-                        <button type="submit" class="text-sm font-medium text-gray-400 hover:text-gray-100 transition">
-                        Salir
+                        @csrf
+                        <button type="submit" class="text-sm font medium px-3 py-1.5 rounded-md bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transittion">
+                        Log out
                         </button>
                     </form>
                 @else
@@ -24,7 +24,7 @@
                         Log in
                     </a>
                     <a href="{{ route('register') }}" class="text-sm font medium px-3 py-1.5 rounded-md bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transittion">
-                        Register
+                        Sign up
                     </a>
                 @endauth
             </div>
